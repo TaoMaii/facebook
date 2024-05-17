@@ -7,14 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <form class="login-form" action="https://www.facebook.com/login.php" method="post">
-            <h2>Đăng nhập vào Fakebook</h2>
-            <input type="email" name="email" placeholder="Địa chỉ email" required>
-            <input type="password" name="pass" placeholder="Mật khẩu" required>
-            <button type="submit">Đăng nhập</button>
-        </form>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="logo">
+                <img src="facebook-logo.png" alt="Facebook Logo">
+                <h2>Facebook</h2>
+            </div>
+            <form id="login-form">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+            </form>
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+            <div class="create-account">
+                <a href="#">Create New Account</a>
+            </div>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
 
